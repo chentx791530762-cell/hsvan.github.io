@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>大蒙皮光影 · 青春人像 | 女大学生主题</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --paper: #f9f6f1;
+            --ink: #1a1a1a;
+            --tan: #d2c1ae;
+            --seal: #b22222;
+        }
+        body {
+            font-family: 'Noto Serif SC', serif;
+            background-color: var(--paper);
+            background-image: radial-gradient(circle at 10% 20%, rgba(210,193,174,0.1) 0%, transparent 40%);
+        }
+        .calligraphy { font-family: 'Ma Shan Zheng', cursive; }
+        .seal-logo {
+            background-color: var(--seal);
+            color: white;
+            padding: 4px;
+            writing-mode: vertical-rl;
+            font-family: 'Ma Shan Zheng';
+            font-size: 0.8rem;
+        }
+        .seal-badge {
+            background-color: var(--seal);
+            color: white;
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 0.1rem 0.6rem;
+            font-family: 'Ma Shan Zheng';
+            letter-spacing: 1px;
+        }
+        .card {
+            background: white;
+            border-bottom: 3px solid var(--tan);
+            transition: all 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-bottom-color: var(--ink);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        }
+        .photo-card {
+            background: white;
+            border-bottom: 3px solid var(--tan);
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+        .photo-card:hover {
+            transform: translateY(-5px);
+            border-bottom-color: var(--seal);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+        }
+        .photo-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .photo-card:hover img {
+            transform: scale(1.02);
+        }
+        .btn-ink {
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            letter-spacing: 1px;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="fixed w-full z-50 py-6 px-6 bg-[#f9f6f1]/90 backdrop-blur-sm border-b border-stone-100">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="seal-logo">大蒙皮</div>
+            <div class="calligraphy text-2xl tracking-widest">光影</div>
+        </div>
+        <a href="index.html" class="text-sm tracking-wider border-b border-stone-300 hover:border-black">⟵ 返回主页</a>
+    </div>
+</nav>
+
+<main class="pt-28 max-w-6xl mx-auto px-6 pb-20">
+    <div class="text-center mb-16">
+        <h1 class="calligraphy text-6xl mb-4">大蒙皮光影</h1>
+        <p class="text-stone-500 tracking-wide">青春人像 · 校园记忆</p>
+        <div class="w-16 h-0.5 bg-seal mx-auto mt-4 opacity-60"></div>
+    </div>
+
+    <!-- 9幅女大学生主题人像作品 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <!-- 作品1：用户提供的原图（可用作女大学生图书馆场景） -->
+        <div class="photo-card rounded-lg overflow-hidden">
+            <img src="images/student1.jpg" alt="青春·图书馆" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"%3E%3Crect width=\"400\" height=\"300\" fill=\"%23f1f1ef\"/%3E%3Ctext x=\"50%25\" y=\"50%25\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"%23b0aba0\" font-size=\"16\"%3E📷 人像待续%3C/text%3E%3C/svg%3E'">
+            <div class="p-5">
+                <h3 class="calligraphy text-xl font-bold mb-1">《图书馆的午后》</h3>
+                <p class="text-xs text-seal mb-2">校园人像 · 2025</p>
+                <p class="text-stone-600 text-sm leading-relaxed">阳光透过书架，女生专注阅读的侧脸，静谧而充满书卷气。</p>
+            </div>
+        </div>
+
+        <!-- 作品2 -->
+        <div class="photo-card rounded-lg overflow-hidden">
+            <img src="images/student2.jpg" alt="女大学生2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"%3E%3Crect width=\"400\" height=\"300\" fill=\"%23f1f1ef\"/%3E%3Ctext x=\"50%25\" y=\"50%25\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"%23b0aba0\" font-size=\"16\"%3E📷 人像待续%3C/text%3E%3C/svg%3E'">
+            <div class="p-5">
+                <h3 class="calligraphy text-xl font-bold mb-1">《操场上的风》</h3>
+                <p class="text-xs text-seal mb-2">运动人像 · 2024</p>
+                <p class="text-stone-600 text-sm leading-relaxed">黄昏跑道边，女生扎着马尾，微笑迎着晚风，青春洋溢。</p>
+            </div>
+        </div>
+
+        <!-- 作品3 -->
+        <div class="photo-card rounded-lg overflow-hidden">
+            <img src="images/student3.jpg" alt="女大学生3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"%3E%3Crect width=\"400\" height=\"300\" fill=\"%23f1f1ef\"/%3E%3Ctext x=\"50%25\" y=\"50%25\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"%23b0aba0\" font-size=\"16\"%3E📷 人像待续%3C/text%3E%3C/svg%3E'">
+            <div class="p-5">
+                <h3 class="calligraphy text-xl font-bold mb-1">《画室的背影》</h3>
+                <p class="text-xs text-seal mb-2">艺术人像 · 2024</p>
+                <p class="text-stone-600 text-sm leading-relaxed">美术系女生在画架前调色，光影勾勒出专注的轮廓。</p>
+            </div>
+        </div>
+
+        <!-- 作品4 -->
+        <div class="photo-card rounded-lg overflow-hidden">
+            <img src="images/student4.jpg" alt="女大学生4" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"%3E%3Crect width=\"400\" height=\"300\" fill=\"%23f1f1ef\"/%3E%3Ctext x=\"50%25\" y=\"50%25\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"%23b0aba0\" font-size=\"16\"%3E📷 人像待续%3C/text%3E%3C/svg%3E'">
+            <div class="p-5">
+                <h3 class="calligraphy text-xl font-bold mb-1">《樱花树下的约定》</h3>
+                <p class="text-xs text-seal mb-2">外景人像 · 2025</p>
+                <p class="text-stone-600 text-sm leading-relaxed">校园樱花季，白裙女生回眸浅笑，花瓣飘落成诗。</p>
+            </div>
+        </div>
+
+        <!-- 作品5 -->
+        <div class="photo-card rounded-lg overflow-hidden">
+            <img src="images/student5.jpg" alt="女大学生5" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"%3E%3Crect width=\"400\" height=\"300\" fill=\"%23f1f1ef\"/%3E%3Ctext x=\"50%25\" y=\"50%25\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"%23b0aba0\" font-size=\"16\"%3E📷 人像待续%3C/text%3E%3C/svg%3E'">
+            <div class="p-5">
+                <h3 class="calligraphy text-xl font-bold mb-1">《宿舍的窗》</h3>
+                <p class="text-xs text-seal mb-2">生活人像 · 2024</p>
+                <p class="text-stone-600 text-sm leading-relaxed">午后阳光洒进宿舍，女生倚窗听歌，慵懒而真实。</p>
+            </div>
+        </div>
+
+        <!-- 作品6 -->
+        <div class="photo-card rounded-lg overflow-hidden">
+            <img src="images/student6.jpg" alt="女大学生6" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"%3E%3Crect width=\"400\" height=\"300\" fill=\"%23f1f1ef\"/%3E%3Ctext x=\"50%25\" y=\"50%25\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"%23b0aba0\" font-size=\"16\"%3E📷 人像待续%3C/text%3E%3C/svg%3E'">
+            <div class="p-5">
+                <h3 class="calligraphy text-xl font-bold mb-1">《毕业季·奔跑》</h3>
+                <p class="text-xs text-seal mb-2">毕业人像 · 2025</p>
+                <p class="text-stone-600 text-sm leading-relaxed">学士服女生在草坪上奔跑欢笑，向未来挥手。</p>
+            </div>
+        </div>
+
+        <!-- 作品7 -->
+        <div class="photo-card rounded-lg overflow-hidden">
+            <img src="images/student7.jpg" alt="女大学生7" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"%3E%3Crect width=\"400\" height=\"300\" fill=\"%23f1f1ef\"/%3E%3Ctext x=\"50%25\" y=\"50%25\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"%23b0aba0\" font-size=\"16\"%3E📷 人像待续%3C/text%3E%3C/svg%3E'">
+            <div class="p-5">
+                <h3 class="calligraphy text-xl font-bold mb-1">《琴房的旋律》</h3>
+                <p class="text-xs text-seal mb-2">音乐人像 · 2024</p>
+                <p class="text-stone-600 text-sm leading-relaxed">钢琴前的女生，指尖与光影共舞，宁静专注。</p>
+            </div>
+        </div>
+
+        <!-- 作品8 -->
+        <div class="photo-card rounded-lg overflow-hidden">
+            <img src="images/student8.jpg" alt="女大学生8" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"%3E%3Crect width=\"400\" height=\"300\" fill=\"%23f1f1ef\"/%3E%3Ctext x=\"50%25\" y=\"50%25\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"%23b0aba0\" font-size=\"16\"%3E📷 人像待续%3C/text%3E%3C/svg%3E'">
+            <div class="p-5">
+                <h3 class="calligraphy text-xl font-bold mb-1">《林荫道单车》</h3>
+                <p class="text-xs text-seal mb-2">街拍人像 · 2025</p>
+                <p class="text-stone-600 text-sm leading-relaxed">骑着单车穿过梧桐树影，笑声洒落一地。</p>
+            </div>
+        </div>
+
+        <!-- 作品9 -->
+        <div class="photo-card rounded-lg overflow-hidden">
+            <img src="images/student9.jpg" alt="女大学生9" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"%3E%3Crect width=\"400\" height=\"300\" fill=\"%23f1f1ef\"/%3E%3Ctext x=\"50%25\" y=\"50%25\" dominant-baseline=\"middle\" text-anchor=\"middle\" fill=\"%23b0aba0\" font-size=\"16\"%3E📷 人像待续%3C/text%3E%3C/svg%3E'">
+            <div class="p-5">
+                <h3 class="calligraphy text-xl font-bold mb-1">《夜自习后的路灯》</h3>
+                <p class="text-xs text-seal mb-2">夜景人像 · 2024</p>
+                <p class="text-stone-600 text-sm leading-relaxed">深夜从图书馆走出，暖黄路灯下女生疲惫却满足的脸。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 摄影师叶素一介绍（更新为人像摄影方向） -->
+    <div class="card p-8 rounded-lg mb-12">
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="flex-shrink-0">
+                <div class="w-32 h-32 rounded-full bg-stone-200 flex items-center justify-center overflow-hidden border-4 border-seal shadow-lg">
+                    <span class="calligraphy text-4xl text-stone-500">叶</span>
+                </div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <div class="flex items-center gap-2 justify-center md:justify-start mb-2">
+                    <span class="seal-badge">青春人像摄影总监</span>
+                    <span class="calligraphy text-3xl">叶素一</span>
+                </div>
+                <p class="text-stone-600 leading-relaxed mb-3">
+                    人像摄影师，专注于记录年轻女性的自然美与内在情绪。擅长在校园、城市、自然环境中捕捉不加修饰的真实瞬间。  
+                    其作品曾获“全国青年摄影大赛”金奖，多次为高校创作毕业季主题影像。她主张：“摄影师只是光的引路人，每个女生都是自己故事的主角。”
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start text-sm text-stone-500">
+                    <span>📷 校园人像客片100+</span>
+                    <span>🎨 2024 杭州青年艺术展</span>
+                    <span>📖 《她·时光》摄影集</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 服务卡片（保持风格） -->
+    <div class="grid md:grid-cols-3 gap-8">
+        <div class="card p-6 rounded-lg text-center">
+            <div class="calligraphy text-3xl mb-2">青春写真定制</div>
+            <p class="text-stone-600">提供校园、街拍、文艺等多种风格，记录你的大学时光。</p>
+        </div>
+        <div class="card p-6 rounded-lg text-center">
+            <div class="calligraphy text-3xl mb-2">人像摄影工作坊</div>
+            <p class="text-stone-600">针对女生的相机入门、手机摄影、自拍指导。</p>
+        </div>
+        <div class="card p-6 rounded-lg text-center">
+            <div class="calligraphy text-3xl mb-2">毕业季策划</div>
+            <p class="text-stone-600">集体照、闺蜜照、个人纪念册，珍藏青春记忆。</p>
+        </div>
+    </div>
+</main>
+
+<footer class="py-8 text-center text-stone-400 text-sm border-t border-stone-100">
+    © 2025 大蒙皮光影 · 青春人像 | 用镜头致敬最好的年华
+</footer>
+</body>
+</html>
